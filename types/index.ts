@@ -18,3 +18,8 @@ export type TLinkHoverProps = {
    href: string;
    className?: string;
 };
+
+export type TButtonProps = {
+   title: string;
+   href: string;
+};

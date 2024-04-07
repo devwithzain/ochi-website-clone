@@ -72,7 +72,7 @@ export const clientsItem = [
          {
             id: 2,
             title: "sales deck",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -93,32 +93,32 @@ export const clientsItem = [
          {
             id: 2,
             title: "big news deck",
-            href: "services",
+            href: "/services",
          },
          {
             id: 3,
             title: "branded template",
-            href: "services",
+            href: "/services",
          },
          {
             id: 4,
             title: "investor deck",
-            href: "services",
+            href: "/services",
          },
          {
             id: 5,
             title: "product presentation",
-            href: "services",
+            href: "/services",
          },
          {
             id: 6,
             title: "sales deck",
-            href: "services",
+            href: "/services",
          },
          {
             id: 7,
             title: "startup pitch",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -139,22 +139,22 @@ export const clientsItem = [
          {
             id: 2,
             title: "onboarding presentation",
-            href: "services",
+            href: "/services",
          },
          {
             id: 3,
             title: "policy deck and playbook",
-            href: "services",
+            href: "/services",
          },
          {
             id: 4,
             title: "redesign",
-            href: "services",
+            href: "/services",
          },
          {
             id: 5,
             title: "sales deck",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -175,7 +175,7 @@ export const clientsItem = [
          {
             id: 2,
             title: "illustration",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -196,7 +196,7 @@ export const clientsItem = [
          {
             id: 2,
             title: "startup pitch",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -233,22 +233,22 @@ export const clientsItem = [
          {
             id: 2,
             title: "investor deck",
-            href: "services",
+            href: "/services",
          },
          {
             id: 3,
             title: "product presentation",
-            href: "services",
+            href: "/services",
          },
          {
             id: 4,
             title: "review",
-            href: "services",
+            href: "/services",
          },
          {
             id: 2,
             title: "sales deck",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -269,7 +269,7 @@ export const clientsItem = [
          {
             id: 2,
             title: "startup pitch",
-            href: "services",
+            href: "/services",
          },
       ]
    },
@@ -295,14 +295,12 @@ export const clientsItem = [
          {
             id: 3,
             title: "startup pitch",
-            href: "services",
+            href: "/services",
          },
       ]
    },
 
 ];
-
-
 
 export const projectItem = [
    {
@@ -663,10 +661,12 @@ export const serviceCapaybilitiesItem = [
          {
             id: 1,
             title: "investor deck",
+            href: "/"
          },
          {
             id: 2,
             title: "startup pitch",
+            href: "/"
          },
       ],
       src2: capaybilities2,
@@ -675,22 +675,27 @@ export const serviceCapaybilitiesItem = [
          {
             id: 1,
             title: "business proposal",
+            href: "/"
          },
          {
             id: 2,
             title: "company presentation",
+            href: "/"
          },
          {
             id: 3,
             title: "product presentation",
+            href: "/"
          },
          {
             id: 4,
             title: "sales deck",
+            href: "/"
          },
          {
             id: 5,
             title: "service deck",
+            href: "/"
          },
       ]
    },
@@ -704,22 +709,27 @@ export const serviceCapaybilitiesItem = [
          {
             id: 1,
             title: "big news deck",
+            href: "/"
          },
          {
             id: 2,
             title: "branded template",
+            href: "/"
          },
          {
             id: 3,
             title: "onboarding presentation",
+            href: "/"
          },
          {
             id: 4,
             title: "policy deck & playbook",
+            href: "/"
          },
          {
             id: 5,
             title: "progress report",
+            href: "/"
          },
       ],
       src2: capaybilities4,
@@ -728,22 +738,27 @@ export const serviceCapaybilitiesItem = [
          {
             id: 1,
             title: "agency",
+            href: "/"
          },
          {
             id: 2,
             title: "branding",
+            href: "/"
          },
          {
             id: 3,
             title: "corporate training",
+            href: "/"
          },
          {
             id: 4,
             title: "redesign",
+            href: "/"
          },
          {
             id: 5,
             title: "review",
+            href: "/"
          },
       ]
    },
@@ -806,7 +821,7 @@ export const achiveItems = [
 export const presentationProjectItem = [
    {
       id: 1,
-      title: "fyde:",
+      title: "fyde",
       src: project1,
       links: [
          {
@@ -833,7 +848,7 @@ export const presentationProjectItem = [
    },
    {
       id: 2,
-      title: "trawa:",
+      title: "trawa",
       src: project3,
       links: [
          {
@@ -926,7 +941,7 @@ export const presentationProjectItem = [
    },
    {
       id: 6,
-      title: "vise:",
+      title: "vise",
       src: project2,
       links: [
          {
@@ -943,7 +958,7 @@ export const presentationProjectItem = [
    },
    {
       id: 7,
-      title: "premium blend",
+      title: "soft start",
       src: project9,
       links: [
          {
@@ -960,7 +975,7 @@ export const presentationProjectItem = [
    },
    {
       id: 8,
-      title: "premium blend",
+      title: "officevibe",
       src: project7,
       links: [
          {
@@ -972,7 +987,7 @@ export const presentationProjectItem = [
    },
    {
       id: 9,
-      title: "premium blend",
+      title: "workiz easy",
       src: project6,
       links: [
          {
