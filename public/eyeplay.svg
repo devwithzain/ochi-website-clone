@@ -1,0 +1,8 @@
+<svg class="w-full h-auto overflow-visible flex-grow" data-eye="right" width="200" height="201" viewBox="0 0 200 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="100" cy="100" r="100" fill="#F4F4F4"/>
+									<g class="eyes-svg__group origin-center" data-svg-origin="100 100" transform="matrix(0.86722,-0.49792,0.49792,0.86722,-36.7889,62.5912)" style="transform-origin: 0px 0px;">
+										<circle cx="100" cy="100" r="60" fill="#212121"/>
+										<circle cx="100" cy="50" r="8" fill="#F4F4F4"/>
+									</g>
+									<text class="uppercase" x="100" y="105" text-anchor="middle" fill="#F4F4F4">play</text>
+								</svg>
