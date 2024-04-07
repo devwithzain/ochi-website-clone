@@ -71,6 +71,7 @@ export { default as showcase4 } from './showcase4.jpeg';
 export { default as showcase5 } from './showcase5.jpeg';
 export { default as showcase6 } from './showcase6.jpeg';
 export { default as after } from './after.png';
+export { default as workizhero } from './workizhero.jpg';
 
 // about page
 export { default as planetly } from './planetly.svg';
