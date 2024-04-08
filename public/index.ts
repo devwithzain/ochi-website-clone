@@ -29,6 +29,7 @@ export { default as publication2 } from './publication2.png';
 export { default as publication3 } from './publication3.png';
 export { default as ochiside } from './ochi-side.jpg';
 export { default as eyeplay } from './eyeplay.svg';
+export { default as contactHero } from './contacthhero.jpg';
 
 // services page
 export { default as phase1 } from './phase1.png';

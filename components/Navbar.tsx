@@ -25,7 +25,7 @@ export default function Navbar() {
 			variants={navVariants}
 			className="w-full h-[8vh] px-[50rem] fixed top-0 left-0 z-50 backdrop-blur-[7rem] flex items-center justify-between border-t border-[#21212155]"
 			animate={hidden ? "hidden" : "vissible"}>
-			<div>
+			<div className="w-1/2">
 				<Link href={"/"}>
 					<Image
 						src={logo}
@@ -35,12 +35,12 @@ export default function Navbar() {
 					/>
 				</Link>
 			</div>
-			<div className="flex gap-x-[20rem] sm:hidden">
+			<div className="flex gap-x-[20rem] sm:hidden w-1/2">
 				{navbarItems.map((item) => (
 					<Link
 						key={item.id}
 						className={`w-fit text-[20rem] leading-[30rem] font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
-							item.id === 5 && "ml-[200rem]"
+							item.id === 5 && "ml-[370rem]"
 						}`}
 						href={item.href}>
 						<TextHover

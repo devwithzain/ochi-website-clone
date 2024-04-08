@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { logo } from "@/public";
 import { LinkHover, TextMask } from "@/animation";
-import { footerItems, navbarItems } from "@/constants";
+import { footerItems, footernavbarItems } from "@/constants";
 
 export default function Footer() {
 	const phrase = ["Eye-", "opening"];
@@ -63,9 +63,9 @@ export default function Footer() {
 							</div>
 							<div className="pt-[50rem]">
 								<h1 className="text-[20rem] leading-[30rem] font-medium font-NeueMontreal text-secondry pb-[20rem]">
-									N:
+									M:
 								</h1>
-								{navbarItems.map((item) => (
+								{footernavbarItems.map((item) => (
 									<LinkHover
 										key={item.id}
 										title={item.title}
