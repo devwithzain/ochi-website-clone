@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { Herocontact, Form } from "@/container";
+import { Herocontact, Form, FAQ, Socials } from "@/container";
 
 export default function Contact() {
 	useEffect(() => {
@@ -13,6 +13,8 @@ export default function Contact() {
 		<>
 			<Herocontact />
 			<Form />
+			<Socials />
+			<FAQ />
 		</>
 	);
 }
