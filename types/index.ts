@@ -23,3 +23,9 @@ export type TButtonProps = {
    title: string;
    href: string;
 };
+
+export type TRoundedProps = {
+   children: React.ReactNode;
+   className?: string;
+   backgroundColor: string;
+};
