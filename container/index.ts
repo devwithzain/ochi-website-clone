@@ -1,5 +1,4 @@
 // home page
-export { default as Home } from "./home-page/Home";
 export { default as Hero } from "./home-page/Hero";
 export { default as About } from "./home-page/About";
 export { default as PlayVideo } from "./home-page/Video";

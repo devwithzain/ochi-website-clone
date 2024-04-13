@@ -9,3 +9,4 @@ export { default as Eyes } from './Eyes';
 export { default as ProjectCard } from './ProjectCard';
 export { default as Tags } from './Tags';
 export { default as PlayVideo } from './PlayVideo';
+export { default as Curve } from './Curve/Curve';
