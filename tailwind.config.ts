@@ -22,9 +22,11 @@ const config: Config = {
       NeueMontreal: ["NeueMontreal", "sans-serif"],
     },
     screens: {
-      sm: { max: "768px" },
-      md: "1024",
-      lg: "1366px"
+      xm: { max: "400px" },
+      sm: { min: "401px", max: "768px" },
+      md: { min: "769px", max: "1024px" },
+      lg: { min: "1025px", max: "1490px" },
+      xl: { min: "1491px" },
     }
   },
   plugins: [],
