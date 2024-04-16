@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 html {
-	font-size: 6.25%;
 	scroll-behavior: smooth;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -27,30 +26,24 @@ body {
 	font-family: NeueMontreal;
 }
 
-@media (max-width: 1490px) {
-	html {
-		font-size: 4.7%;
+@layer utilities {
+	.padding-x {
+		@apply px-[50px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
-}
-@media (max-width: 1060px) {
-	html {
-		font-size: 4.5%;
+	.heading {
+		@apply text-[177px] leading-[130px] lg:text-[130px] lg:leading-[98px] md:text-[100px] md:leading-[75px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px];
 	}
-}
-@media (max-width: 768px) {
-	html {
-		font-size: 4%;
+	.sub-heading {
+		@apply text-[70px] leading-[70px] lg:text-[52px] lg:leading-[52px] md:text-[52px] md:leading-[52px] sm:text-[40px] sm:leading-[40px] xm:text-[31px] xm:leading-[31px];
 	}
-}
-
-@media (max-width: 400px) {
-	html {
-		font-size: 3%;
+	.paragraph {
+		@apply text-[21px] leading-[32px] lg:text-[16px] lg:leading-[24px] md:text-[16px] md:leading-[24px] sm:text-[16px] sm:leading-[24px] xm:text-[16px] xm:leading-[24px];
 	}
-}
-@media (max-width: 200px) {
-	html {
-		font-size: 2.5%;
+	.sub-paragraph {
+		@apply xl:text-[31px] xl:leading-[35px] text-[16px] leading-[24px];
+	}
+	.small-text {
+		@apply xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px];
 	}
 }
 
@@ -90,7 +83,7 @@ body {
 	position: absolute;
 	content: "";
 	left: 0;
-	bottom: -1rem;
+	bottom: -2px;
 	display: block;
 	width: 100%;
 	height: 2px;
@@ -116,4 +109,8 @@ body {
 .link-flash:hover::after {
 	transform: scaleX(0);
 	transition-delay: 0s;
+}
+
+.h {
+	height: calc(100vh + 600px);
 }
