@@ -43,7 +43,7 @@ body {
 		@apply xl:text-[31px] xl:leading-[35px] text-[16px] leading-[24px];
 	}
 	.small-text {
-		@apply xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px];
+		@apply xl:text-[18px] xl:leading-[28px] lg:text-[16px] lg:leading-[24px] text-[14px] leading-[24px];
 	}
 }
 
