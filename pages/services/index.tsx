@@ -8,7 +8,7 @@ import {
 	Heroservices,
 } from "@/container";
 import { useEffect } from "react";
-import { Ready } from "@/components";
+import { Curve, Ready } from "@/components";
 
 export default function Services() {
 	useEffect(() => {
@@ -19,13 +19,15 @@ export default function Services() {
 	}, []);
 	return (
 		<>
-			<Heroservices />
-			<Process />
-			<Capibilyties />
-			<Clientsservices />
-			<Archive />
-			<Expectations />
-			<Ready />
+			<Curve backgroundColor={"#f1f1f1"}>
+				<Heroservices />
+				<Process />
+				<Capibilyties />
+				<Clientsservices />
+				<Archive />
+				<Expectations />
+				<Ready />
+			</Curve>
 		</>
 	);
 }

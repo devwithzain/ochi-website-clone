@@ -8,7 +8,7 @@ import {
 	Principles,
 } from "@/container";
 import { useEffect } from "react";
-import { Ready } from "@/components";
+import { Curve, Ready } from "@/components";
 
 export default function About() {
 	useEffect(() => {
@@ -19,13 +19,15 @@ export default function About() {
 	}, []);
 	return (
 		<>
-			<Heroabout />
-			<Aboutabout />
-			<Team />
-			<Principles />
-			<Partners />
-			<Insights />
-			<Ready />
+			<Curve backgroundColor={"#f1f1f1"}>
+				<Heroabout />
+				<Aboutabout />
+				<Team />
+				<Principles />
+				<Partners />
+				<Insights />
+				<Ready />
+			</Curve>
 		</>
 	);
 }

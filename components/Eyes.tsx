@@ -3,7 +3,7 @@ import Image from "next/image";
 import { eyes } from "@/public";
 import React, { useEffect, useState } from "react";
 
-export default function Eyes() {
+export default function Eyes({ className }: { className: string }) {
 	const [rotate, setRotate] = useState(0);
 	useEffect(() => {
 		window.addEventListener("mousemove", (e) => {
@@ -17,26 +17,29 @@ export default function Eyes() {
 			setRotate(angle - 280);
 		});
 	}, []);
+
 	return (
 		<div className="w-full gap-[30px] flex items-center justify-center">
-			<div className="w-[350rem] h-[350rem] bg-white border border-[#21212188] rounded-full flex items-center justify-center">
+			<div
+				className={`bg-white border-[2px] border-[#21212188] rounded-full flex items-center justify-center ${className}`}>
 				<Image
 					style={{
 						transform: `rotate(${rotate}deg)`,
 					}}
 					src={eyes}
 					alt="img"
-					className="w-full h-auto object-cover"
+					className="w-full h-full object-cover"
 				/>
 			</div>
-			<div className="w-[350rem] h-[350rem] bg-white border border-[#21212188] rounded-full flex items-center justify-center">
+			<div
+				className={`bg-white border-[2px] border-[#21212188] rounded-full flex items-center justify-center ${className}`}>
 				<Image
 					style={{
 						transform: `rotate(${rotate}deg)`,
 					}}
 					src={eyes}
 					alt="img"
-					className="w-full h-auto object-cover"
+					className="w-full h-full object-cover"
 				/>
 			</div>
 		</div>

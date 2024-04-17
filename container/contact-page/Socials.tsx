@@ -6,6 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 import { LinkHover, TextMask } from "@/animation";
 import { useEffect, useState, useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { Eyes } from "@/components";
 
 export default function Socials() {
 	const [rotate, setRotate] = useState(0);
@@ -32,63 +33,60 @@ export default function Socials() {
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -700]);
 	return (
 		<section
-			className="w-full min-h-screen bg-about py-[100rem] sticky -top-[85%]"
+			className="w-full min-h-screen bg-about py-[100px] relative"
 			ref={container}>
-			<div className="w-full h-full flex justify-center gap-[50rem] items-center flex-col">
-				<div className="flex flex-col gap-[10rem] pb-[50rem]">
-					<h1 className="text-[277rem] text-center leading-[207rem] font-bold font-FoundersGrotesk text-secondry uppercase">
+			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
+				<div className="flex flex-col gap-[10px] pb-[50px]">
+					<h1 className="text-[277px] leading-[207px] lg:text-[230px] lg:leading-[170px] md:text-[150px] md:leading-[100px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px] text-center font-bold font-FoundersGrotesk text-secondry uppercase pointer-events-none">
 						<TextMask>{phrase}</TextMask>
 					</h1>
 				</div>
-				<div className="w-full border-t border-[#21212155] pt-[20rem]">
-					<div className="w-full flex justify-between gap-[15rem] px-[50rem]">
-						<div className="w-[10%]">
-							<h3 className="text-[20rem] leading-[30rem] font-medium text-secondry font-NeueMontreal">
+				<div className="w-full border-t border-[#21212155] pt-[20px]">
+					<div className="w-full flex sm:flex-col xm:flex-col justify-between gap-y-[20px] padding-x">
+						<div className="w-[50%] sm:w-full xm:w-full">
+							<h3 className="paragraph font-medium text-secondry font-NeueMontreal">
 								Our contact
 							</h3>
 						</div>
-						<div className="w-[48%] flex justify-between">
+						<div className="w-[50%] sm:w-full xm:w-full flex sm:flex-col xm:flex-col justify-between gap-y-[20px]">
 							<div>
-								<h1 className="text-[20rem] leading-[30rem] font-medium font-NeueMontreal text-secondry pb-[20rem]">
+								<h1 className="paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
 									L:
 								</h1>
-								<div className="flex flex-col gap-y-[10rem]">
+								<div className="flex flex-col gap-y-[10px]">
 									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit text-[20rem] leading-[30rem] font-medium  capitalize flex flex-col before:bottom-[1rem] after:bottom-[1rem]"
+										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
 										title={`202-1965 W 4th Awe`}
 										href="/"
 									/>
 									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit text-[20rem] leading-[30rem] font-medium  capitalize flex flex-col before:bottom-[1rem] after:bottom-[1rem]"
+										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
 										title={`Vancouver, Canada`}
 										href="/"
 									/>
 									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit text-[20rem] leading-[30rem] font-medium  capitalize flex flex-col before:bottom-[1rem] after:bottom-[1rem]"
+										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
 										title="30 Chukarina"
 										href="/"
 									/>
 									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit text-[20rem] leading-[30rem] font-medium  capitalize flex flex-col before:bottom-[1rem] after:bottom-[1rem]"
+										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
 										title="St Lviv, Ukraine"
 										href="/"
 									/>
 								</div>
 							</div>
-							<div className="flex w-fit h-fit gap-x-[10rem] group">
-								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-secondry  py-[5px] px-[15rem] cursor-pointer">
+							<div className="flex w-fit h-fit gap-x-[10px] group">
+								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-secondry  py-[3px] px-[12px] cursor-pointer">
 									<Link
 										href="mailto:hello@ochi.design"
-										className="text-[20rem] font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-200 ease-in">
+										className="paragraph font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-200 ease-in">
 										hello@ochi.design
 									</Link>
 								</div>
-								<div className="w-[45rem] flex items-center justify-center h-[45rem] border-[2px] border-[#21212155] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in cursor-pointer">
-									<p className="text-[20rem] font-normal text-secondry group-hover:text-background">
-										<ArrowUpRight
-											size={20}
-											strokeWidth={1.25}
-										/>
+								<div className="w-[35px] flex items-center justify-center h-[35px] border-[2px] border-[#21212155] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in cursor-pointer sm:hidden xm:hidden">
+									<p className="paragraph font-normal text-secondry group-hover:text-background">
+										<ArrowUpRight strokeWidth={1.25} />
 									</p>
 								</div>
 							</div>
@@ -99,26 +97,7 @@ export default function Socials() {
 			<motion.div
 				className="w-full absolute top-[50%] transform translate-y-[-50%] gap-[30px] flex items-center justify-center"
 				style={{ y: mq }}>
-				<div className="w-[250rem] h-[250rem] bg-white rounded-full flex items-center justify-center">
-					<Image
-						style={{
-							transform: `rotate(${rotate}deg)`,
-						}}
-						src={eyes}
-						alt="img"
-						className="w-full h-auto object-cover"
-					/>
-				</div>
-				<div className="w-[250rem] h-[250rem] bg-white rounded-full flex items-center justify-center">
-					<Image
-						style={{
-							transform: `rotate(${rotate}deg)`,
-						}}
-						src={eyes}
-						alt="img"
-						className="w-full h-auto object-cover"
-					/>
-				</div>
+				<Eyes className="w-[230px] h-[230px] md:w-[200px] md:h-[200px] sm:w-[150px] sm:h-[150px] xm:w-[150px] xm:h-[150px] sm:flex-col xm:flex-col" />
 			</motion.div>
 		</section>
 	);

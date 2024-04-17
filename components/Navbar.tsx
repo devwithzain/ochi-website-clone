@@ -23,9 +23,9 @@ export default function Navbar() {
 	return (
 		<motion.nav
 			variants={navVariants}
-			className="w-full h-[8vh] px-[50rem] fixed top-0 left-0 z-50 backdrop-blur-[7rem] flex items-center justify-between border-t border-[#21212155]"
+			className="w-full h-[8vh] padding-x fixed top-0 left-0 z-50 backdrop-blur-[7px] flex items-center justify-between"
 			animate={hidden ? "hidden" : "vissible"}>
-			<div className="w-1/2">
+			<div className="w-[50%]">
 				<Link href={"/"}>
 					<Image
 						src={logo}
@@ -35,12 +35,12 @@ export default function Navbar() {
 					/>
 				</Link>
 			</div>
-			<div className="flex gap-x-[20rem] sm:hidden w-1/2">
+			<div className="flex gap-x-[20px] sm:hidden xm:hidden w-[50%]">
 				{navbarItems.map((item) => (
 					<Link
 						key={item.id}
-						className={`w-fit text-[20rem] leading-[30rem] font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
-							item.id === 5 && "ml-[370rem]"
+						className={`w-fit text-[21px] leading-[32px] lg:text-[16px] lg:leading-[24px] md:text-[16px] md:leading-[24px] font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
+							item.id === 5 && "ml-[220px]"
 						}`}
 						href={item.href}>
 						<TextHover

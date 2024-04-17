@@ -4,42 +4,42 @@ import { BackgroundImg } from "@/components";
 
 export default function Archive() {
 	return (
-		<section className="w-full pb-[150rem]">
-			<div className="px-[50rem]">
+		<section className="w-full pb-[100px]">
+			<div className="padding-x w-full">
 				<BackgroundImg src={background} />
 			</div>
-			<div className="w-full pt-[140rem]">
-				<div className="w-full px-[50rem] pt-[20rem] border-t border-[#21212155]  flex justify-between">
-					<div className="w-[50%]">
-						<h3 className="text-[20rem] leading-[30rem] font-medium text-secondry font-NeueMontreal">
+			<div className="w-full pt-[100px]">
+				<div className="w-full padding-x pt-[20px] border-t border-[#21212155] flex sm:flex-col xm:flex-col justify-between gap-y-[20px]">
+					<div className="w-[50%] sm:w-full xm:w-full">
+						<h3 className="paragraph font-medium text-secondry font-NeueMontreal">
 							Ochi in numbers:
 						</h3>
 					</div>
-					<div className="w-[50%] flex flex-col gap-y-[20rem]">
+					<div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-y-[20px]">
 						{achiveItems.map((item) => (
 							<div
-								className="w-full flex justify-between gap-x-[20rem]"
+								className="w-full flex justify-between gap-[20px] sm:flex-col xm:flex-col"
 								key={item.id}>
-								<div className="bg-[#E1E1E1] w-full flex flex-col gap-y-[150rem] rounded-[20rem] px-[30rem] py-[20rem]">
-									<div className="flex gap-x-[10rem] items-center pb-[10rem]">
-										<h1 className="text-[65rem] leading-[65rem] font-normal font-NeueMontreal text-secondry">
+								<div className="bg-[#E1E1E1] w-full flex flex-col gap-y-[150px] rounded-[20px] px-[30px] py-[20px]">
+									<div className="flex gap-x-[10px] items-center pb-[10px]">
+										<h1 className="sub-heading font-normal font-NeueMontreal text-secondry">
 											{item.title1}
 										</h1>
 									</div>
 									<div className="w-full flex justify-between items-center">
-										<button className="text-[20rem] leading-[30rem] font-normal font-NeueMontreal text-secondry">
+										<button className="paragraph font-normal font-NeueMontreal text-secondry">
 											{item.subTitle1}
 										</button>
 									</div>
 								</div>
-								<div className="bg-[#E1E1E1] w-full flex flex-col gap-y-[150rem] rounded-[20rem] px-[30rem] py-[20rem]">
-									<div className="flex gap-x-[10rem] items-center pb-[10rem]">
-										<h1 className="text-[65rem] leading-[65rem] font-normal font-NeueMontreal text-secondry">
+								<div className="bg-[#E1E1E1] w-full flex flex-col gap-y-[150px] rounded-[20px] px-[30px] py-[20px]">
+									<div className="flex gap-x-[10px] items-center pb-[10px]">
+										<h1 className="sub-heading font-normal font-NeueMontreal text-secondry">
 											{item.title2}
 										</h1>
 									</div>
 									<div className="w-full flex justify-between items-center">
-										<button className="text-[20rem] leading-[30rem] font-normal font-NeueMontreal text-secondry">
+										<button className="paragraph font-normal font-NeueMontreal text-secondry">
 											{item.subTitle2}
 										</button>
 									</div>

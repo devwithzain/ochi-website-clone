@@ -1,81 +1,57 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import { eyes } from "@/public";
-import { Rounded } from "@/components";
+import { useRef } from "react";
 import { TextMask } from "@/animation";
 import { ArrowUpRight } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
+import { Eyes, RoundButton, Rounded } from "@/components";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function Ready() {
-	const [rotate, setRotate] = useState(0);
-	const phrase = ["Ready", "to start", "the project"];
-	useEffect(() => {
-		window.addEventListener("mousemove", (e) => {
-			let mouseX = e.clientX;
-			let mouseY = e.clientY;
-
-			let deltaX = mouseX - window.innerWidth / 2;
-			let deltaY = mouseY - window.innerHeight / 2;
-
-			var angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-			setRotate(angle - 280);
-		});
-	}, []);
 	const container = useRef(null);
+	const phrase = ["Ready", "to start", "the project"];
 
 	const { scrollYProgress } = useScroll({
 		target: container,
 		offset: ["start end", "end start"],
 	});
-
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -700]);
+
 	return (
 		<section
-			className="w-full -top-[36%] z-20 min-h-screen bg-about py-[100rem] rounded-t-[20rem] sticky"
+			className="w-full sticky -top-[36%] z-30 min-h-screen bg-about py-[100px] rounded-t-[20px]"
 			ref={container}>
-			<div className="w-full h-full flex justify-center gap-[50rem] items-center flex-col">
-				<div className="flex flex-col gap-[10rem]">
-					<h1 className="text-[277rem] text-center leading-[207rem] font-bold font-FoundersGrotesk text-secondry uppercase">
+			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
+				<div className="flex flex-col gap-[10px]">
+					<h1 className="text-[290px] leading-[230px] lg:text-[220px] lg:leading-[170px] md:text-[180px] md:leading-[140px] sm:text-[120px] sm:leading-[90px] xm:text-[80px] xm:leading-[60px] tracking-[-2.5px] text-center font-bold font-FoundersGrotesk text-secondry uppercase pointer-events-none">
 						<TextMask>{phrase}</TextMask>
 					</h1>
 				</div>
-				<div className="flex flex-col  items-center gap-[10rem]">
+				<div className="flex flex-col  items-center gap-[10px]">
 					<div className="flex items-center justify-between bg-secondry cursor-pointer rounded-full group">
-						<Link
-							className="text-[19rem] text-white uppercase font-normal font-NeueMontreal"
-							href="/contact">
-							<Rounded
-								className="py-[10rem]"
-								backgroundColor="#000">
-								<p className="text-white z-10 px-[15px] ml-[20rem] py-[10rem]">
-									start the project
-								</p>
-								<div className="bg-white p-[15px] rounded-full scale-[0.3] mr-[17rem] group-hover:scale-[1] transition-all z-10 text-black  duration-300 ease-in-out">
-									<ArrowUpRight
-										strokeWidth={1.5}
-										size={25}
-									/>
-								</div>
-							</Rounded>
-						</Link>
+						<RoundButton
+							href="/contact"
+							title="start the project"
+							className="bg-white text-black"
+							bgcolor="#000"
+							style={{ color: "#fff" }}
+						/>
 					</div>
-					<p className="text-[20rem] font-NeueMontreal text-secondry">OR</p>
+					<p className="text-[20px] font-NeueMontreal text-secondry">OR</p>
 					<div className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group border border-[#212121]">
 						<Link
-							className="text-[19rem] text-white uppercase font-normal font-NeueMontreal"
-							href={"/"}>
+							className="xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal"
+							href="/contact">
 							<Rounded
-								className="py-[10rem]"
+								className="py-[6px]"
 								backgroundColor="#212121">
-								<p className="text-black z-10 px-[15px] ml-[20rem] py-[10rem] group-hover:text-white">
+								<p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-black">
 									hello@ochi.design
 								</p>
-								<div className="bg-black group-hover:bg-white p-[15px] rounded-full scale-[0.3] mr-[17rem] group-hover:scale-[1] transition-all z-10 text-white group-hover:text-black  duration-300 ease-in-out">
+								<div className="bg-black group-hover:bg-white text-black p-[10px] rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]">
 									<ArrowUpRight
 										strokeWidth={1.5}
-										size={25}
+										size={30}
+										className="scale-[0] group-hover:scale-[1]"
 									/>
 								</div>
 							</Rounded>
@@ -86,26 +62,7 @@ export default function Ready() {
 			<motion.div
 				className="w-full absolute top-[50%] transform translate-y-[-50%] gap-[30px] flex items-center justify-center"
 				style={{ y: mq }}>
-				<div className="w-[250rem] h-[250rem] bg-white rounded-full flex items-center justify-center">
-					<Image
-						style={{
-							transform: `rotate(${rotate}deg)`,
-						}}
-						src={eyes}
-						alt="img"
-						className="w-full h-auto object-cover"
-					/>
-				</div>
-				<div className="w-[250rem] h-[250rem] bg-white rounded-full flex items-center justify-center">
-					<Image
-						style={{
-							transform: `rotate(${rotate}deg)`,
-						}}
-						src={eyes}
-						alt="img"
-						className="w-full h-auto object-cover"
-					/>
-				</div>
+				<Eyes className="w-[230px] h-[230px] md:w-[200px] md:h-[200px] sm:w-[150px] sm:h-[150px] xm:w-[150px] xm:h-[150px] sm:flex-col xm:flex-col" />
 			</motion.div>
 		</section>
 	);

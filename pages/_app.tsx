@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import { AnimatePresence } from "framer-motion";
 import { Footer, Navbar } from "@/components";
+import { AnimatePresence } from "framer-motion";
 
 export default function App({
 	Component,

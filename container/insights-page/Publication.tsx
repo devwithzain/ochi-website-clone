@@ -4,35 +4,35 @@ import { insightsPublicationItems } from "@/constants";
 
 export default function Publication() {
 	return (
-		<section className="w-full bg-marquee py-[120rem] rounded-t-[20rem] mb-[100rem]">
-			<div className="w-full">
+		<section className="w-full bg-marquee py-[120px] rounded-t-[20px]">
+			<div className="w-full bg-marquee z-10 relative rounded-t-[20px]">
 				<Marquee
 					title="instagram"
-					className="text-[516rem] leading-[310rem] pb-[55px]"
+					className="pb-[50px] lg:pb-[40px] md:pb-[30px] sm:pb-[20px] xm:pb-[15px] text-[540px] leading-[330px] lg:text-[380px] lg:leading-[240px] md:text-[300px] md:leading-[160px] sm:text-[230px] sm:leading-[140px] xm:text-[130px] xm:leading-[80px]"
 				/>
 			</div>
-			<div className="w-full px-[50rem] py-[30rem]">
-				<div className="w-full flex justify-between gap-[20rem] flex-wrap">
+			<div className="w-full padding-x py-[30px]">
+				<div className="w-full flex justify-between gap-[20px] flex-wrap sm:flex-col xm:flex-col">
 					<div>
-						<h3 className="text-[20rem] leading-[30rem] font-medium text-white font-NeueMontreal">
+						<h3 className="paragraph font-medium text-white font-NeueMontreal">
 							Latest publication
 						</h3>
 					</div>
-					<div className=" flex gap-y-[20rem]">
+					<div className="flex gap-[20px] sm:flex-col xm:flex-col">
 						{insightsPublicationItems.map((item) => (
 							<div
-								className="w-full flex justify-between gap-x-[10rem]"
+								className="w-full flex justify-between"
 								key={item.id}>
-								<div className="w-full flex gap-y-[30rem] rounded-[20rem] px-[10rem] flex-col">
+								<div className="w-full flex gap-y-[20px] rounded-[20px] flex-col transform duration-[1s] ease-[.4,0,.2,1] overflow-hidden">
 									<Image
 										src={item.src}
 										alt="img"
-										width={400}
-										height={400}
-										className="w-[400px] h-[400px] rounded-[20rem]"
+										width={280}
+										height={280}
+										className="sm:w-full xm:w-full w-[280px] h-[280px] rounded-[20px] transform duration-[1s] ease-[.4,0,.2,1]"
 									/>
 									<div>
-										<h1 className="text-[20rem] leading-[24rem] font-normal tracking-wider font-NeueMontreal text-white">
+										<h1 className="paragraph font-normal tracking-wider font-NeueMontreal text-white">
 											{item.title}
 										</h1>
 									</div>

@@ -14,55 +14,60 @@ export default function Clients() {
 		setActiveAccordion((prev) => (prev === itemId ? null : itemId));
 	};
 	return (
-		<section className="w-full py-[150rem]">
-			<h1 className="text-[65rem] px-[50rem] leading-[65rem] font-medium font-NeueMontreal text-secondry pb-[50rem]">
+		<section className="w-full py-[150px]">
+			<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry pb-[50px]">
 				Clients’ reviews
 			</h1>
 			{serviceClientsItem.map((item) => (
 				<div
 					key={item.id}
-					className={`w-full flex py-[10rem] flex-col ${
+					className={`w-full flex py-[10px] flex-col ${
 						item.id == 1
 							? "border-y border-[#21212155]"
 							: "border-b border-[#21212155]"
 					}`}>
-					<div className="w-full flex items-center justify-between py-[10rem] px-[50rem]">
-						<div className="w-[20%]">
-							<Link
-								href={item.href}
-								className="text-[20rem] leading-[30rem] font-normal font-NeueMontreal text-secondry link-flash">
-								{item.website}
-							</Link>
+					<div className="w-full flex items-center justify-between py-[10px] padding-x">
+						<div className="w-[50%] flex items-center">
+							<div className="w-[40%] sm:w-auto xm:w-auto">
+								<Link
+									href={item.href}
+									className="small-text font-normal font-NeueMontreal text-secondry link-flash">
+									{item.website}
+								</Link>
+							</div>
+							<div className="w-auto sm:hidden xm:hidden">
+								<motion.h3
+									className={`small-text font-normal font-NeueMontreal text-secondry ${
+										activeAccordion === item.id ? "opacity-100" : "opacity-0"
+									} opacity-0 transition-all duration-200 ease-in-out`}>
+									{item.title}
+								</motion.h3>
+							</div>
 						</div>
-						<div className="w-[30%]">
-							<motion.h3
-								className={`text-[20rem] font-normal font-NeueMontreal text-secondry ${
-									activeAccordion === item.id ? "opacity-100" : "opacity-0"
-								} opacity-0 transition-all duration-200 ease-in-out`}>
-								{item.title}
-							</motion.h3>
-						</div>
-						<div className="w-[40%]">
-							<h3 className="text-[20rem] font-normal font-NeueMontreal text-secondry">
-								{item.name}
-							</h3>
-						</div>
-						<div className="w-[10%] flex items-end justify-end">
-							<button
-								className={`text-[20rem] leading-[30rem] font-normal font-NeueMontreal uppercase transition-all duration-200 ease-in-out ${
-									activeAccordion === item.id
-										? "text-gray-300"
-										: "text-secondry link-flash"
-								}`}
-								onClick={() => toggleAccordion(item.id)}>
-								{activeAccordion === item.id ? "read" : "read"}
-							</button>
+						<div className="w-[50%] flex justify-between items-center">
+							<div className="w-[40%] sm:w-auto xm:w-auto">
+								<h3 className="small-text font-normal font-NeueMontreal text-secondry">
+									{item.name}
+								</h3>
+							</div>
+							<div className="w-[10%] sm:w-auto xm:w-auto flex items-end justify-end">
+								<button
+									className={`small-text font-normal font-NeueMontreal uppercase transition-all duration-200 ease-in-out ${
+										activeAccordion === item.id
+											? "text-gray-300"
+											: "text-secondry link-flash"
+									}`}
+									onClick={() => toggleAccordion(item.id)}>
+									{activeAccordion === item.id ? "read" : "read"}
+								</button>
+							</div>
 						</div>
 					</div>
 
-					<div className={`w-full flex justify-between px-[50rem]`}>
-						<div className="w-[20%]" />
-						<div className="w-[30%]">
+					<div
+						className={`w-full flex justify-between padding-x  sm:flex-col xm:flex-col`}>
+						<div className="w-[20%] sm:w-auto xm:w-auto" />
+						<div className="w-[30%] sm:w-auto xm:w-auto sm:flex xm:flex flex-wrap gap-x-[5px] sm:pt-[10px] xm:pt-[10px]">
 							{item.links.map((link) => (
 								<AnimatePresence key={link.id}>
 									{activeAccordion === item.id && (
@@ -72,21 +77,21 @@ export default function Clients() {
 											exit={{ opacity: 0, height: 0 }}
 											transition={{
 												ease: [0.4, 0, 0.2, 1],
-												duration: 1.3,
+												duration: 1,
 											}}>
 											<Button
-												key={link.id}
 												href={link.href}
 												title={link.title}
+												key={link.id}
 											/>
 										</motion.div>
 									)}
 								</AnimatePresence>
 							))}
 						</div>
-						<div className="w-[40%]">
+						<div className="w-[40%] sm:w-auto xm:w-auto">
 							<AnimatePresence>
-								{activeAccordion === item.id && ( // Display content if accordion is active
+								{activeAccordion === item.id && (
 									<motion.div
 										initial={{ opacity: 0, height: 0 }}
 										animate={{ opacity: 1, height: "auto" }}
@@ -95,8 +100,8 @@ export default function Clients() {
 											ease: [0.4, 0, 0.2, 1],
 											duration: 1.3,
 										}}>
-										<div className="flex flex-col gap-[20rem] py-[30rem]">
-											<div className="w-[130rem] h-[130rem]">
+										<div className="flex flex-col gap-[20px] py-[30px]">
+											<div className="w-[130px] h-[130px]">
 												<Image
 													src={item.src}
 													alt="clientImg"
@@ -104,7 +109,7 @@ export default function Clients() {
 												/>
 											</div>
 											<div className="">
-												<p className="text-[20rem] leading-[30rem] tracking-wider font-normal font-NeueMontreal text-secondry">
+												<p className="small-text tracking-wider font-normal font-NeueMontreal text-secondry">
 													{item.review}
 												</p>
 											</div>
@@ -113,7 +118,7 @@ export default function Clients() {
 								)}
 							</AnimatePresence>
 						</div>
-						<div className="w-[10%]" />
+						<div className="w-[10%] sm:w-auto xm:w-auto" />
 					</div>
 				</div>
 			))}

@@ -3,22 +3,22 @@ import { principles1, principles2 } from "@/public";
 
 export default function Principles() {
 	return (
-		<section className="w-full py-[150rem] rounded-t-[20rem] bg-background">
+		<section className="w-full pb-[50px] pt-[100px] rounded-t-[20px] bg-background">
 			<div>
-				<h1 className="text-[65rem] px-[50rem]  leading-[65rem] font-medium font-NeueMontreal text-secondry">
+				<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry">
 					Two principles we stand behind in <br /> every part of our work:
 				</h1>
 			</div>
-			<div className="w-full border-t border-[#21212155] my-[50rem]">
-				<div className="w-full p-[50rem] flex justify-between gap-[20rem] items-center">
-					<div className="w-[50%] flex flex-col gap-[20rem]">
+			<div className="w-full border-t border-[#21212155] my-[50px]">
+				<div className="w-full padding-x py-[50px] flex justify-between gap-[30px] items-center sm:flex-col xm:flex-col">
+					<div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-[20px]">
 						<Image
 							src={principles1}
 							alt="img"
-							className="w-full rounded-[15rem]"
+							className="w-full rounded-[15px]"
 						/>
-						<div className="flex flex-col gap-y-[20rem]">
-							<p className="text-[20rem] leading-[30rem] font-NeueMontreal text-secondry">
+						<div className="flex flex-col gap-[20px]">
+							<p className="paragraph font-NeueMontreal text-secondry">
 								Whether the presentation needs to convince or <br />
 								educate it always has to change audience
 								<br /> perception. We seek insights to make decks
@@ -26,14 +26,14 @@ export default function Principles() {
 							</p>
 						</div>
 					</div>
-					<div className="w-[50%] flex flex-col gap-[20rem]">
+					<div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-[20px]">
 						<Image
 							src={principles2}
 							alt="img"
-							className="w-full rounded-[15rem]"
+							className="w-full rounded-[15px]"
 						/>
-						<div className="flex flex-col gap-y-[20rem]">
-							<p className="text-[20rem] leading-[30rem] font-NeueMontreal text-secondry">
+						<div className="flex flex-col gap-[20px]">
+							<p className="paragraph font-NeueMontreal text-secondry">
 								The presentation helps to see what&apos;s hidden,
 								<br /> unseen, or simply never known before. We use <br />
 								design to drive their attention, focus them to <br />

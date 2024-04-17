@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { Ready } from "@/components";
+import { Curve, Ready } from "@/components";
 import {
 	Heropresentation,
 	Projectspresentation,
@@ -16,10 +16,12 @@ export default function Presentation() {
 	}, []);
 	return (
 		<>
-			<Heropresentation />
-			<Projectspresentation />
-			<Publication />
-			<Ready />
+			<Curve backgroundColor={"#f1f1f1"}>
+				<Heropresentation />
+				<Projectspresentation />
+				<Publication />
+				<Ready />
+			</Curve>
 		</>
 	);
 }
