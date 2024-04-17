@@ -339,7 +339,7 @@ export const projectItem = [
    {
       id: 1,
       title: "fyde",
-      href: "/case/workiz",
+      href: "/case/",
       src: project1,
       links: [
          {
@@ -367,7 +367,7 @@ export const projectItem = [
    {
       id: 2,
       title: "vise",
-      href: "/case/workiz",
+      href: "/case/",
       src: project2,
       links: [
          {
@@ -385,7 +385,7 @@ export const projectItem = [
    {
       id: 3,
       title: "trawa",
-      href: "/case/workiz",
+      href: "/case/",
       src: project3,
       links: [
          {
@@ -408,7 +408,7 @@ export const projectItem = [
    {
       id: 4,
       title: "premium blend",
-      href: "/case/workiz",
+      href: "/case/",
       src: project4,
       links: [
          {
@@ -860,7 +860,7 @@ export const presentationProjectItem = [
       id: 1,
       title: "fyde",
       src: project1,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -888,7 +888,7 @@ export const presentationProjectItem = [
       id: 2,
       title: "trawa",
       src: project3,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -911,7 +911,7 @@ export const presentationProjectItem = [
       id: 3,
       title: "premium blend",
       src: project4,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -924,7 +924,7 @@ export const presentationProjectItem = [
       id: 4,
       title: "planetly",
       src: project5,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -962,7 +962,7 @@ export const presentationProjectItem = [
       id: 5,
       title: "black box",
       src: project8,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -985,7 +985,7 @@ export const presentationProjectItem = [
       id: 6,
       title: "vise",
       src: project2,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -1003,7 +1003,7 @@ export const presentationProjectItem = [
       id: 7,
       title: "soft start",
       src: project9,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -1021,7 +1021,7 @@ export const presentationProjectItem = [
       id: 8,
       title: "officevibe",
       src: project7,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -1034,7 +1034,7 @@ export const presentationProjectItem = [
       id: 9,
       title: "workiz easy",
       src: project6,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -1135,7 +1135,7 @@ export const workizItem = [
       id: 1,
       title: "office vibe",
       src: project7,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
@@ -1148,7 +1148,7 @@ export const workizItem = [
       id: 2,
       title: "planetly",
       src: project5,
-      href: "/case/workiz",
+      href: "/case/",
       links: [
          {
             id: 1,
