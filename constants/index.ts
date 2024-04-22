@@ -407,7 +407,7 @@ export const projectItem = [
    },
    {
       id: 4,
-      title: "premium blend",
+      title: "premiumblend",
       href: "/case/",
       src: project4,
       links: [
@@ -1206,36 +1206,36 @@ export const aboutPartberItems = [
       title: "Nestle",
       para: "This is just a great experience for us! As an established company, you operate within different industries and expect immediate input with a certain level of service. Ihor and the team delivered exactly that. Fantastic result, quick delivery time, and highly responsive. This team is a hidden gem. We've already started to outline our next projects for them."
    },
-   {
-      id: 4,
-      src: toyota,
-      title: "Toyota",
-      para: "Great work, great communication, and work ethic. Their skills, and understanding of project scope and subject matter - are simply unmatched. Looking very forward to working again soon."
-   },
-   {
-      id: 5,
-      src: lexus,
-      title: "Lexus",
-      para: "Thanks for your great work! The communication was excellent, the team was able to grasp in detail what we wanted and plastered it on the company presentation and sales deck. Their work is absolutely amazing."
-   },
-   {
-      id: 6,
-      src: aflorihtmic,
-      title: "Aflorithmic",
-      para: "Super responsive and quick. A charm to work with. Unfortunately, often designers are not like that and you end up losing a lot of time with briefings that don't lead anywhere. This is definitely not the case here. I'd work again with lhor and his team anytime!"
-   },
-   {
-      id: 7,
-      src: orderlion,
-      title: "Orderlion",
-      para: "The result was just amazing! For me, a designer is exceptional when you are so satisfied with the result that you want to look at it the whole day like a kid with a new toy. Ihor and his team delivered exactly that! They are very talented designers who understand the real business problem we are trying to solve and iterate over many drafts to achieve the best possible outcome. We are looking for a long-lasting working relationship!"
-   },
-   {
-      id: 8,
-      src: blackBox,
-      title: "BlackBox",
-      para: "They nailed what our product was all about. We found their ability to workshop all the angles and take on feedback was great and it shows in the final product. Everything moved with a milestone dynamic brief via Notion which was handy to track progress. We're very happy with the process and the final product. All was handled well and professionally."
-   },
+   // {
+   //    id: 4,
+   //    src: toyota,
+   //    title: "Toyota",
+   //    para: "Great work, great communication, and work ethic. Their skills, and understanding of project scope and subject matter - are simply unmatched. Looking very forward to working again soon."
+   // },
+   // {
+   //    id: 5,
+   //    src: lexus,
+   //    title: "Lexus",
+   //    para: "Thanks for your great work! The communication was excellent, the team was able to grasp in detail what we wanted and plastered it on the company presentation and sales deck. Their work is absolutely amazing."
+   // },
+   // {
+   //    id: 6,
+   //    src: aflorihtmic,
+   //    title: "Aflorithmic",
+   //    para: "Super responsive and quick. A charm to work with. Unfortunately, often designers are not like that and you end up losing a lot of time with briefings that don't lead anywhere. This is definitely not the case here. I'd work again with lhor and his team anytime!"
+   // },
+   // {
+   //    id: 7,
+   //    src: orderlion,
+   //    title: "Orderlion",
+   //    para: "The result was just amazing! For me, a designer is exceptional when you are so satisfied with the result that you want to look at it the whole day like a kid with a new toy. Ihor and his team delivered exactly that! They are very talented designers who understand the real business problem we are trying to solve and iterate over many drafts to achieve the best possible outcome. We are looking for a long-lasting working relationship!"
+   // },
+   // {
+   //    id: 8,
+   //    src: blackBox,
+   //    title: "BlackBox",
+   //    para: "They nailed what our product was all about. We found their ability to workshop all the angles and take on feedback was great and it shows in the final product. Everything moved with a milestone dynamic brief via Notion which was handy to track progress. We're very happy with the process and the final product. All was handled well and professionally."
+   // },
 ];
 
 // contact page constants
