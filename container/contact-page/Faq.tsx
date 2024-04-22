@@ -70,7 +70,7 @@ export default function Faq() {
 											{item.links.map((link) => (
 												<div
 													key={link.id}
-													className="flex pt-[20px] justify-between gap-[80px]">
+													className="flex pt-[20px] sm:flex-col xm:flex-col sm:gap-[20px] xm:gap-[20px] justify-between gap-[80px]">
 													<span className="paragraph tracking-wider font-normal font-NeueMontreal text-secondry">
 														{link.title}
 													</span>
