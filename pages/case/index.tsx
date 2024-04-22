@@ -9,7 +9,7 @@ import {
 	VideoWorkiz,
 } from "@/container";
 import { useEffect } from "react";
-import { Ready } from "@/components";
+import { Curve, Ready } from "@/components";
 
 export default function Work() {
 	useEffect(() => {
@@ -20,14 +20,16 @@ export default function Work() {
 	}, []);
 	return (
 		<>
-			<Heroworkiz />
-			<Aboutworkiz />
-			<Chelenge />
-			<VideoWorkiz />
-			<Result />
-			<Credit />
-			<Works />
-			<Ready />
+			<Curve backgroundColor="#f1f1f1">
+				<Heroworkiz />
+				<Aboutworkiz />
+				<Chelenge />
+				<VideoWorkiz />
+				<Result />
+				<Credit />
+				<Works />
+				<Ready />
+			</Curve>
 		</>
 	);
 }
