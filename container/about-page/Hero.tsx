@@ -75,7 +75,7 @@ export default function Hero() {
 								<div className="flex w-fit h-fit gap-[5px] group">
 									<div className="rounded-[50px] border border-[#21212199] group-hover:bg-secondry  py-[3px] px-[12px] cursor-pointer">
 										<Link
-											href="/case/workiz"
+											href="/case"
 											className="paragraph font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-200 ease-in">
 											Our Work
 										</Link>
