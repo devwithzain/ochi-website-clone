@@ -26,16 +26,16 @@ export default function Insights() {
 										className={`group relative overflow-hidden ${
 											item.id == 1 && "hidden"
 										} block`}>
-										<Link
-											href={item.href}
-											className="w-full flex flex-col gap-[20px]">
-											<div className="w-[350px] overflow-hidden rounded-[15px]">
+										<div className="w-full flex flex-col gap-[20px]">
+											<Link
+												className="w-[350px] overflow-hidden rounded-[15px]"
+												href={item.href}>
 												<Image
 													src={item.src}
 													alt="img"
 													className="w-full hover:scale-[1.09] transition transform duration-[1s] ease-[.4,0,.2,1]"
 												/>
-											</div>
+											</Link>
 											<div className="flex gap-[10px] items-center absolute left-[25px] top-[25px]">
 												{item.links.map((link) => (
 													<div
@@ -63,7 +63,7 @@ export default function Insights() {
 													{item.date}
 												</p>
 											</div>
-										</Link>
+										</div>
 									</div>
 								))}
 							</div>
