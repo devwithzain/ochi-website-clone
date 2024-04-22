@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Ratings } from "@/components";
-import { motion } from "framer-motion";
 import { aboutPartberItems } from "@/constants";
 
 export default function Principles() {
@@ -14,9 +13,7 @@ export default function Principles() {
 				</h1>
 			</div>
 			<div className="w-full border-t border-[#21212155] mt-[50px]">
-				<motion.div
-					drag="x"
-					className="flex justify-between gap-[20px] shrink-0 pt-[50px]">
+				<div className="flex justify-between gap-[20px] sm:flex-col xm:flex-col pt-[50px]">
 					{aboutPartberItems.map((item) => (
 						<div
 							className="w-[440px] sm:w-[380px] xm:w-[350px]  padding-x py-[30px] shrink-0"
@@ -42,7 +39,7 @@ export default function Principles() {
 							</div>
 						</div>
 					))}
-				</motion.div>
+				</div>
 			</div>
 			<div className="padding-x py-[80px]">
 				<Ratings />
