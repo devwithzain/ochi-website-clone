@@ -19,9 +19,9 @@ export default function Hero() {
 										transition={{
 											ease: [0.86, 0, 0.07, 0.995],
 											duration: 1,
-											delay: 0.5,
+											delay: 1.5,
 										}}
-										className="block sm:hidden">
+										className="leading-[130px]">
 										<Image
 											width={120}
 											height={50}
