@@ -8,13 +8,13 @@ import { awwwards, ochiside } from "@/public";
 export default function Hero() {
 	return (
 		<section
-			className="w-full h-screen sm:mb-[-10px] xm:mb-[-10px]"
+			className="w-full h-[100svh] sm:mb-[-10px] xm:mb-[-10px]"
 			data-scroll
 			data-scroll-speed="-.3">
 			<div className="w-full h-full flex flex-col justify-between">
 				<div />
 				<div className="w-full flex flex-col justify-between h-[75vh] sm:h-[85vh] xm:h-[85vh]">
-					<div className="w-full flex justify-between gap-[20px] pl-[50px] sm:pl-[20px] xm:pl-[20px]">
+					<div className="w-full flex justify-between gap-[20px] pl-[50px] md:pl-[30px] sm:pl-[20px] xm:pl-[20px]">
 						<div>
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 								we create <br />
