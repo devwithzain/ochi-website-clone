@@ -13,11 +13,11 @@ export default function Button({ href, title }: TButtonProps) {
 						{title}
 					</Link>
 				</div>
-				<div className="w-[30px] flex items-center justify-center h-[30px] border border-[#21212199] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in-out cursor-pointer scale-0 group-hover:scale-100 sm:hidden xm:hidden">
+				<div className="w-[33px] flex items-center justify-center h-[33px] border border-[#21212199] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in-out cursor-pointer scale-0 group-hover:scale-100 sm:hidden xm:hidden">
 					<p className="small-text font-normal text-secondry group-hover:text-background">
 						<ArrowUpRight
 							strokeWidth={1.25}
-							size={20}
+							size={24}
 						/>
 					</p>
 				</div>
