@@ -41,7 +41,7 @@ export default function Navbar() {
 					{navbarItems.map((item) => (
 						<Link
 							key={item.id}
-							className={`w-fit text-[21px] leading-[32px] lg:text-[16px] lg:leading-[24px] md:text-[16px] md:leading-[24px] font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
+							className={`w-fit paragraph font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
 								item.id === 5 && "ml-auto"
 							}`}
 							href={item.href}>
