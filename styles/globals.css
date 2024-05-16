@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 
 body {
 	box-sizing: border-box;
-	background-color: #f1f1f1;
+	background-color: #000;
 }
 
 @font-face {
@@ -30,16 +30,16 @@ body {
 		@apply px-[50px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
 	.heading {
-		@apply text-[177px] leading-[130px] lg:text-[130px] lg:leading-[98px] md:text-[100px] md:leading-[75px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px];
+		@apply text-[150px] leading-[100px] lg:text-[130px] lg:leading-[98px] md:text-[100px] md:leading-[75px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px];
 	}
 	.sub-heading {
-		@apply text-[70px] leading-[70px] lg:text-[52px] lg:leading-[52px] md:text-[52px] md:leading-[52px] sm:text-[40px] sm:leading-[40px] xm:text-[31px] xm:leading-[31px];
+		@apply text-[55px] leading-[55px] lg:text-[52px] lg:leading-[52px] md:text-[52px] md:leading-[52px] sm:text-[40px] sm:leading-[40px] xm:text-[31px] xm:leading-[31px];
 	}
 	.paragraph {
-		@apply text-[21px] leading-[32px] lg:text-[16px] lg:leading-[24px] md:text-[16px] md:leading-[24px] sm:text-[16px] sm:leading-[24px] xm:text-[16px] xm:leading-[24px];
+		@apply text-[18px] leading-[26px] lg:text-[16px] lg:leading-[24px] md:text-[16px] md:leading-[24px] sm:text-[16px] sm:leading-[24px] xm:text-[16px] xm:leading-[24px];
 	}
 	.sub-paragraph {
-		@apply xl:text-[31px] xl:leading-[35px] text-[16px] leading-[24px];
+		@apply xl:text-[21px] xl:leading-[31px] text-[16px] leading-[24px];
 	}
 	.small-text {
 		@apply xl:text-[18px] xl:leading-[28px] lg:text-[16px] lg:leading-[24px] text-[14px] leading-[24px];
