@@ -10,7 +10,7 @@ const routes = {
 	"/presentation": "Our Work",
 	"/ochi-team": "About Us",
 	"/insights": "Insights",
-	"/contact": "Contact",
+	"/contact": "Contact Us",
 	"/case": "Workiz Easy",
 };
 
