@@ -3,7 +3,7 @@ export default function Hero() {
 		<section className="w-full min-h-screen">
 			<div className="w-full flex flex-col justify-between">
 				<div className="w-full flex flex-col">
-					<div className="w-full mt-[170px] mb-[130px] padding-x">
+					<div className="w-full margin padding-x">
 						<div>
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 								services

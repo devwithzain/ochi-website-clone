@@ -5,8 +5,8 @@ import { useState } from "react";
 export default function Expectations() {
 	const [click, setClick] = useState(false);
 	return (
-		<section className="w-full bg-marquee pb-[150px] rounded-t-[20px]">
-			<div className="w-full bg-marquee z-10 relative rounded-t-[20px] pt-[100px]">
+		<section className="w-full bg-marquee padding-y rounded-t-[20px]">
+			<div className="w-full bg-marquee z-10 relative rounded-t-[20px]">
 				<Marquee
 					title="why us other"
 					className="pb-[50px] lg:pb-[40px] md:pb-[30px] sm:pb-[30px] xm:pb-[15px] text-[540px] leading-[330px] lg:text-[380px] lg:leading-[240px] md:text-[300px] md:leading-[160px] sm:text-[230px] sm:leading-[140px] xm:text-[130px] xm:leading-[80px]"

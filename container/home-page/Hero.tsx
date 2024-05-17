@@ -8,7 +8,7 @@ import { awwwards, ochiside } from "@/public";
 export default function Hero() {
 	return (
 		<section
-			className="w-full h-[100svh] sm:mb-[-10px] xm:mb-[-10px]"
+			className="w-full h-screen sm:mb-[-10px] xm:mb-[-10px]"
 			data-scroll
 			data-scroll-speed="-.3">
 			<div className="w-full h-full flex flex-col justify-between">

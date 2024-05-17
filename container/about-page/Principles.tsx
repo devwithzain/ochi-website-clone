@@ -3,14 +3,15 @@ import { principles1, principles2 } from "@/public";
 
 export default function Principles() {
 	return (
-		<section className="w-full pb-[50px] pt-[100px] rounded-t-[20px] bg-background">
+		<section className="w-full padding-y rounded-t-[20px] bg-background">
 			<div>
 				<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry">
-					Two principles we stand behind in <br /> every part of our work:
+					Two principles we stand behind in
+					<br className="sm:hidden xm:hidden" /> every part of our work:
 				</h1>
 			</div>
 			<div className="w-full border-t border-[#21212155] my-[50px]">
-				<div className="w-full padding-x py-[50px] flex justify-between gap-[30px] items-center sm:flex-col xm:flex-col">
+				<div className="w-full padding-x flex justify-between gap-[30px] items-center sm:flex-col xm:flex-col">
 					<div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-[20px]">
 						<Image
 							src={principles1}

@@ -10,7 +10,7 @@ export default function About() {
 	const [hovered, setHovered] = useState(false);
 
 	return (
-		<section className="w-full bg-about py-[80px] rounded-t-[20px] z-20 relative mt-[-15px]">
+		<section className="w-full bg-about padding-y rounded-t-[20px] z-20 relative mt-[-15px]">
 			<div className="pl-[50px] sm:px-[20px] xm:px-[20px]">
 				<h2 className="sub-heading font-medium font-NeueMontreal text-secondry">
 					Ochi is a strategic partner for fast-grow­ing tech{" "}

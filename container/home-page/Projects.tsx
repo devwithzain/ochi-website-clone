@@ -6,9 +6,9 @@ export default function Projects() {
 		<section className="w-full rounded-t-[20px]">
 			<Heading
 				title="Featured projects"
-				className="padding-x pt-[150px] pb-[50px] border-b border-[#21212155]"
+				className="padding-x padding-y pb-[50px] border-b border-[#21212155]"
 			/>
-			<div className="w-full flex justify-between gap-y-[50px] padding-x py-[80px] flex-wrap">
+			<div className="w-full flex justify-between gap-y-[50px] padding-x padding-y flex-wrap">
 				{projectItem.map((item) => (
 					<div
 						className="w-[49%] sm:w-full xm:w-full"

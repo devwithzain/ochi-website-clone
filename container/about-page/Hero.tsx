@@ -11,7 +11,7 @@ export default function Hero() {
 		<section className="w-full min-h-screen">
 			<div className="w-full flex flex-col justify-between">
 				<div className="w-full flex flex-col">
-					<div className="w-full mt-[170px] mb-[130px] padding-x">
+					<div className="w-full margin padding-x">
 						<div>
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 								WE ARE <br />
@@ -92,7 +92,7 @@ export default function Hero() {
 				</div>
 			</div>
 			<div
-				className="py-[150px]"
+				className="padding-y"
 				data-scroll
 				data-scroll-speed="-.1">
 				<Eyes className="w-[300px] h-[300px] md:w-[200px] md:h-[200px] sm:w-[150px] sm:h-[150px] xm:w-[150px] xm:h-[150px] sm:flex-col xm:flex-col" />

@@ -14,7 +14,7 @@ export default function Clients() {
 		setActiveAccordion((prev) => (prev === itemId ? null : itemId));
 	};
 	return (
-		<section className="w-full py-[100px]">
+		<section className="w-full padding-y">
 			<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry pb-[50px]">
 				Clients’ reviews
 			</h1>
