@@ -29,8 +29,14 @@ body {
 	.padding-x {
 		@apply px-[50px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
+	.padding-y {
+		@apply py-[100px] lg:py-[80px] md:py-[60px] sm:py-[40px] xm:py-[40px];
+	}
+	.margin {
+		@apply mt-[170px] lg:mt-[80px] md:mt-[60px] sm:mt-[40px] xm:mt-[40px] mb-[130px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px] xm:mb-[40px];
+	}
 	.heading {
-		@apply text-[150px] leading-[100px] lg:text-[130px] lg:leading-[98px] md:text-[100px] md:leading-[75px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px];
+		@apply text-[150px] leading-[100px] lg:text-[130px] lg:leading-[98px] md:text-[100px] md:leading-[75px] sm:text-[74px] sm:leading-[50px] xm:text-[64px] xm:leading-[40px];
 	}
 	.sub-heading {
 		@apply text-[55px] leading-[55px] lg:text-[52px] lg:leading-[52px] md:text-[52px] md:leading-[52px] sm:text-[40px] sm:leading-[40px] xm:text-[31px] xm:leading-[31px];
