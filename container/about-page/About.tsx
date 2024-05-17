@@ -3,10 +3,10 @@ import { BackgroundImg } from "@/components";
 
 export default function About() {
 	return (
-		<section className="w-full py-[150px]">
+		<section className="w-full padding-y">
 			<div className="w-full flex flex-col bg-background">
 				<div className="w-full border-t border-[#21212155] pt-[20px]">
-					<div className="w-full flex justify-between padding-x pb-[150px] sm:flex-col xm:flex-col gap-[30px]">
+					<div className="w-full flex justify-between padding-x sm:flex-col xm:flex-col gap-[30px]">
 						<div>
 							<h3 className="paragraph font-medium text-secondry font-NeueMontreal">
 								We are ochi design:
@@ -37,7 +37,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className="padding-x">
+			<div className="padding-x padding-y">
 				<BackgroundImg src={backgroundAbout} />
 			</div>
 		</section>
