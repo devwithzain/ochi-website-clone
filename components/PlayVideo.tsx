@@ -42,7 +42,7 @@ export default function PlayVideo({ videosrc }: { videosrc: string }) {
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -400]);
 	return (
 		<div
-			className="w-full relative overflow-hidden cursor-pointer sm:hidden xm:hidden"
+			className="w-full relative overflow-hidden cursor-pointer"
 			ref={container}
 			onClick={togglePlay}>
 			<div
@@ -51,7 +51,7 @@ export default function PlayVideo({ videosrc }: { videosrc: string }) {
 				data-scroll-speed="-.8"
 				data-scroll-section>
 				<video
-					className="w-full h-full rounded-[10px]"
+					className="w-full h-full"
 					loop
 					ref={videoRef}
 					src={videosrc}
@@ -73,7 +73,7 @@ export default function PlayVideo({ videosrc }: { videosrc: string }) {
 								alt="img"
 								className="w-full h-full object-cover"
 							/>
-							<p className="absolute top-1/2 left-1/2 text-[25px] uppercase text-white font-NeueMontreal font-medium transform translate-x-[-50%] translate-y-[-50%]">
+							<p className="absolute top-1/2 left-1/2 paragraph uppercase text-white font-NeueMontreal font-medium transform translate-x-[-50%] translate-y-[-50%]">
 								{isPlaying ? "Pause" : "Play"}
 							</p>
 						</div>
@@ -90,7 +90,7 @@ export default function PlayVideo({ videosrc }: { videosrc: string }) {
 								alt="img"
 								className="w-full h-full object-cover"
 							/>
-							<p className="absolute top-1/2 left-1/2 text-[25px] uppercase text-white font-NeueMontreal font-medium transform translate-x-[-50%] translate-y-[-50%]">
+							<p className="absolute top-1/2 left-1/2 paragraph uppercase text-white font-NeueMontreal font-medium transform translate-x-[-50%] translate-y-[-50%]">
 								{isPlaying ? "Pause" : "Play"}
 							</p>
 						</div>

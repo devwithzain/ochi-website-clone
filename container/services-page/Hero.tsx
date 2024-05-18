@@ -11,11 +11,15 @@ export default function Hero() {
 						</div>
 					</div>
 					<div className="w-full border-t border-[#21212155]">
-						<p className="w-[80%] sm:w-full xm:w-full sub-heading font-normal padding-x font-NeueMontreal text-secondry mt-[20px] mb-[80px]">
+						<p className="w-[80%] sm:w-full xm:w-full sub-heading font-normal padding-x font-NeueMontreal text-secondry padding-y">
 							We create&nbsp;
-							<span className="link-flash cursor-pointer">eye-catching</span>
-							&nbsp;and&nbsp;
-							<span className="link-flash cursor-pointer">eye-opening</span>
+							<span className="xl:link-flash lg:link-flash md:link-flash cursor-pointer">
+								eye-catching&nbsp;
+							</span>
+							and&nbsp;
+							<span className="xl:link-flash lg:link-flash md:link-flash cursor-pointer">
+								eye-opening&nbsp;
+							</span>
 							presentations that educate, inspire and influence action.
 						</p>
 					</div>

@@ -33,7 +33,7 @@ export default function Socials() {
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -700]);
 	return (
 		<section
-			className="w-full min-h-screen bg-about py-[100px] relative"
+			className="w-full min-h-screen sm:h-screen xm:h-screen bg-about padding-y relative"
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex flex-col gap-[10px] pb-[50px]">
@@ -76,7 +76,7 @@ export default function Socials() {
 									/>
 								</div>
 							</div>
-							<div className="flex w-fit h-fit gap-x-[10px] group">
+							<div className="flex w-fit h-fit gap-x-[5px] group">
 								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-secondry  py-[3px] px-[12px] cursor-pointer">
 									<Link
 										href="mailto:hello@ochi.design"
@@ -84,9 +84,12 @@ export default function Socials() {
 										hello@ochi.design
 									</Link>
 								</div>
-								<div className="w-[35px] flex items-center justify-center h-[35px] border-[2px] border-[#21212155] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in cursor-pointer sm:hidden xm:hidden">
+								<div className="w-[33px] flex items-center justify-center h-[33px] border-[2px] border-[#21212155] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in cursor-pointer sm:hidden xm:hidden">
 									<p className="paragraph font-normal text-secondry group-hover:text-background">
-										<ArrowUpRight strokeWidth={1.25} />
+										<ArrowUpRight
+											size={24}
+											strokeWidth={1.25}
+										/>
 									</p>
 								</div>
 							</div>

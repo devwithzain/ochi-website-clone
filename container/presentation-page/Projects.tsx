@@ -21,14 +21,15 @@ export default function Projects() {
 					data-scroll-speed="-.1"
 				/>
 			</div>
-			<section className="w-full relative z-30 py-[150px] rounded-t-[20px] bg-background">
+			<section className="w-full relative z-30 padding-y rounded-t-[20px] bg-background">
 				<div>
-					<h2 className="sub-heading font-normal padding-x font-NeueMontreal text-secondry mt-[20px] mb-[80px]">
-						Purpose driven, strategy-led presentations <br />
+					<h2 className="sub-heading font-normal padding-x font-NeueMontreal text-secondry">
+						Purpose driven, strategy-led presentations
+						<br className="sm:hidden xm:hidden" />
 						that people care about.
 					</h2>
 				</div>
-				<div className="w-full flex justify-between gap-y-[50px] padding-x pt-[100px] flex-wrap">
+				<div className="w-full flex justify-between gap-y-[50px] padding-x padding-y flex-wrap">
 					{presentationProjectItem.map((item) => (
 						<div
 							className="w-[49%] sm:w-full xm:w-full"

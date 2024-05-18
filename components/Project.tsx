@@ -2,10 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { Rounded } from "@/components";
 import { motion } from "framer-motion";
-import { projectItem } from "@/constants";
 import { ArrowUpRight } from "lucide-react";
-import { Marquee, Rounded } from "@/components";
 
 export default function Project({ item }: { item: any }) {
 	const [hovered, setHovered] = useState(false);

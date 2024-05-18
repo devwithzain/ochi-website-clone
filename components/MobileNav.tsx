@@ -2,18 +2,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { footerItems, footernavbarItems, navbarItems } from "@/constants";
 import { IoMdClose } from "react-icons/io";
 import { logo, mobileLogo } from "@/public";
+import { footernavbarItems } from "@/constants";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
-import { LinkHover } from "@/animation";
 
 export default function MobileNav() {
 	const [toggle, setToggle] = useState(false);
 	return (
 		<>
-			<div className="w-full hidden justify-between items-center h-[8vh] padding-x sm:flex xm:flex md:flex bg-background">
+			<div className="w-full hidden justify-between items-center h-[8vh] padding-x sm:flex xm:flex md:flex">
 				<Link href={"/"}>
 					<Image
 						src={logo}
@@ -50,7 +49,7 @@ export default function MobileNav() {
 							/>
 						</div>
 						<ul className="h-full w-full flex justify-center text-left flex-col gap-[10px] padding-x">
-							{navbarItems.map((item) => (
+							{footernavbarItems.map((item) => (
 								<Link
 									href={item.href}
 									key={item.id}

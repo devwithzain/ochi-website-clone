@@ -4,7 +4,7 @@ import { insightsPublicationItems } from "@/constants";
 
 export default function Publication() {
 	return (
-		<section className="w-full bg-marquee py-[120px] rounded-t-[20px]">
+		<section className="w-full bg-marquee padding-y rounded-t-[20px]">
 			<div className="w-full bg-marquee z-10 relative rounded-t-[20px]">
 				<Marquee
 					title="instagram"
@@ -18,23 +18,24 @@ export default function Publication() {
 							Latest publication
 						</h3>
 					</div>
-					<div className="flex gap-[20px] sm:flex-col xm:flex-col">
+					<div className="w-[70%] flex gap-y-[20px] sm:flex-col xm:flex-col sm:w-full xm:w-full gap-[10px]">
 						{insightsPublicationItems.map((item) => (
 							<div
-								className="w-full flex justify-between"
+								className="w-full flex justify-between gap-[20px] sm:flex-col xm:flex-col"
 								key={item.id}>
-								<div className="w-full flex gap-y-[20px] rounded-[20px] flex-col transform duration-[1s] ease-[.4,0,.2,1] overflow-hidden">
-									<Image
-										src={item.src}
-										alt="img"
-										width={280}
-										height={280}
-										className="sm:w-full xm:w-full w-[280px] h-[280px] rounded-[20px] transform duration-[1s] ease-[.4,0,.2,1]"
-									/>
-									<div>
-										<h1 className="paragraph font-normal tracking-wider font-NeueMontreal text-white">
+								<div className="w-full flex gap-[20px] rounded-[20px] flex-col">
+									<div className="group overflow-hidden rounded-[20px]">
+										<Image
+											src={item.src}
+											alt="img"
+											className="w-full h-full group-hover:scale-[1.09] transform duration-[1s] ease-[.4,0,.2,1]	"
+										/>
+									</div>
+									<div className="flex gap-[10px] items-center">
+										<span className="w-[10px] h-[10px] rounded-full bg-white" />
+										<h4 className="paragraph uppercase font-medium font-NeueMontreal text-white">
 											{item.title}
-										</h1>
+										</h4>
 									</div>
 								</div>
 							</div>

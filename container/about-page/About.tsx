@@ -37,7 +37,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className="padding-x padding-y">
+			<div className="padding-x pt-[100px] lg:pt-[80px] md:pt-[60px] sm:pt-[40px] xm:pt-[40px]">
 				<BackgroundImg src={backgroundAbout} />
 			</div>
 		</section>

@@ -85,10 +85,18 @@ export default function Hero() {
 								</div>
 							</div>
 						</div>
-						<div className="w-full flex items-center justify-center xm:hidden sm:hidden">
-							<p className="capitalize paragraph font-NeueMontreal text-secondry">
+						<div className="w-full flex items-center overflow-hidden justify-center xm:hidden sm:hidden">
+							<motion.p
+								initial={{ y: "-100%", opacity: 0 }}
+								animate={{ y: "100%", opacity: 0.5 }}
+								transition={{
+									duration: 1.8,
+									repeat: Infinity,
+									ease: [0.3, 0.86, 0.36, 0.95],
+								}}
+								className="paragraph opacity-50 font-NeueMontreal text-secondry">
 								scroll down
-							</p>
+							</motion.p>
 						</div>
 					</div>
 				</div>

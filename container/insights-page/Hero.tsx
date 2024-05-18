@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { latestItemss } from "@/constants";
-import { Tags } from "@/components";
+import { Rounded, Tags } from "@/components";
 
 export default function Hero() {
 	const str = [
@@ -30,7 +30,7 @@ export default function Hero() {
 		<section className="w-full min-h-screen">
 			<div className="w-full flex flex-col justify-between">
 				<div className="w-full flex flex-col">
-					<div className="w-full mt-[170px] mb-[130px] padding-x">
+					<div className="w-full margin padding-x">
 						<div>
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 								INSIGHTS
@@ -38,7 +38,7 @@ export default function Hero() {
 						</div>
 					</div>
 					<div className="w-full border-t border-[#21212155] pt-[20px]">
-						<div className="w-full flex justify-between padding-x sm:flex-col xm:flex-col gap-y-[20px]">
+						<div className="w-full flex justify-between padding-x sm:flex-col xm:flex-col gap-[20px]">
 							<div className="w-[50%] sm:w-full xm:w-full">
 								<h3 className="paragraph font-medium text-secondry font-NeueMontreal">
 									Latest insights:
@@ -47,18 +47,32 @@ export default function Hero() {
 							<div className="w-[50%] sm:w-full xm:w-full flex flex-wrap items-center gap-[10px]">
 								{str.map((item, i) => (
 									<div key={i}>
-										<Tags
-											bgcolor="#212121"
-											item={item}
-											className="hover:text-white"
-										/>
+										{item.id === 1 ? (
+											<div
+												className="w-fit rounded-[50px] border border-[#21212199] cursor-pointer bg-black"
+												key={item.id}>
+												<Link
+													className="small-text font-NeueMontreal uppercase text-white"
+													href={item.href}>
+													<div className="py-[2px]">
+														<p className="z-10 px-[15px]">{item.title}</p>
+													</div>
+												</Link>
+											</div>
+										) : (
+											<Tags
+												bgcolor="#212121"
+												item={item}
+												className="hover:text-white"
+											/>
+										)}
 									</div>
 								))}
 							</div>
 						</div>
 					</div>
 					<div className="w-full padding-x">
-						<div className="w-[50%] sm:w-full xm:w-full flex gap-[20px] py-[150px] sm:flex-col xm:flex-col gap-y-[20px]">
+						<div className="w-[50%] sm:w-full xm:w-full flex gap-[20px] padding-y sm:flex-col xm:flex-col gap-y-[20px]">
 							{latestItemss.map((item) => (
 								<div
 									key={item.id}
@@ -76,9 +90,9 @@ export default function Hero() {
 												<div
 													className="transform translate-y-[-200%] group-hover:translate-y-0 transition-all duration-300 ease-in-out"
 													key={link.id}>
-													<div className="rounded-[50px] border border-about py-[3px] px-[15px] cursor-pointer">
+													<div className="rounded-[50px] border border-secondry py-[3px] px-[15px] cursor-pointer">
 														<Link
-															className="small-text font-NeueMontreal text-about uppercase"
+															className="small-text font-NeueMontreal text-secondry uppercase"
 															href={"/"}>
 															{link.title}
 														</Link>
@@ -86,7 +100,7 @@ export default function Hero() {
 												</div>
 											))}
 										</div>
-										<div className="flex flex-col gap-[7px]">
+										<div className="flex flex-col gap-[7px] mt-[10px]">
 											<h3 className="paragraph font-NeueMontreal font-normal text-secondry">
 												Presenting to an International Audience: <br /> Tips and
 												Lessons Learned.

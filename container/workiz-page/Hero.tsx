@@ -9,7 +9,7 @@ export default function Hero() {
 		<section className="w-full rounded-b-[20px]">
 			<div className="w-full pb-[200px]">
 				<div className="w-full flex flex-col">
-					<div className="w-full mt-[170px] mb-[130px] padding-x">
+					<div className="w-full margin padding-x">
 						<div>
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 								<div className="flex items-center gap-[5px]">
@@ -95,7 +95,7 @@ export default function Hero() {
 					</div>
 				</div>
 			</div>
-			<div className="w-full py-[100px]">
+			<div className="w-full pt-[100px] lg:pt-[80px] md:pt-[60px] sm:pt-[40px] xm:pt-[40px]">
 				<BackgroundImg src={workiz} />
 			</div>
 		</section>

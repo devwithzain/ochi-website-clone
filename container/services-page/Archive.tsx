@@ -4,7 +4,7 @@ import { BackgroundImg } from "@/components";
 
 export default function Archive() {
 	return (
-		<section className="w-full padding-y">
+		<section className="w-full">
 			<div className="padding-x w-full">
 				<BackgroundImg src={background} />
 			</div>

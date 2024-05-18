@@ -13,30 +13,30 @@ export default function About() {
 		<section className="w-full bg-about padding-y rounded-t-[20px] z-20 relative mt-[-15px]">
 			<div className="pl-[50px] sm:px-[20px] xm:px-[20px]">
 				<h2 className="sub-heading font-medium font-NeueMontreal text-secondry">
-					Ochi is a strategic partner for fast-grow­ing tech{" "}
+					Ochi is a strategic partner for fast-grow­ing tech
 					<br className="sm:hidden xm:hidden" /> businesses that need to&nbsp;
-					<span className="sub-heading font-medium font-NeueMontreal relative ease-[0.19, 1, 0.22, 1] before:absolute before:content-[''] before:left-0 text-secondry  before:block before:w-full  before:bg-secondry before:transition before:duration-[0.6s] after:absolute after:content-[''] after:left-0  after:block after:w-full  after:bg-secondry after:transition after:duration-[0.6s] before:scale-x-0 before:origin-left after:origin-right after:delay-[0.25s] hover:before:scale-x-100 hover:before:delay-[0.25s] hover:after:scale-x-0 hover:after:delay-0 before:h-[2px] h-[2px] after:h-[2px] before:bottom-[-1.5px] after:bottom-[-1.5px] cursor-pointer">
+					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
 						raise funds,
 					</span>
 					&nbsp;sell prod­ucts, <br className="sm:hidden xm:hidden" />
-					<span className="sub-heading font-medium font-NeueMontreal relative ease-[0.19, 1, 0.22, 1] before:absolute before:content-[''] before:left-0 text-secondry  before:block before:w-full  before:bg-secondry before:transition before:duration-[0.6s] after:absolute after:content-[''] after:left-0  after:block after:w-full  after:bg-secondry after:transition after:duration-[0.6s] before:scale-x-0 before:origin-left after:origin-right after:delay-[0.25s] hover:before:scale-x-100 hover:before:delay-[0.25s] hover:after:scale-x-0 hover:after:delay-0 before:h-[2px] h-[2px] after:h-[2px] before:bottom-[-1.5px] after:bottom-[-1.5px] cursor-pointer">
+					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
 						ex­plain com­plex ideas,
 					</span>
 					&nbsp;and&nbsp;
-					<span className="sub-heading font-medium font-NeueMontreal relative ease-[0.19, 1, 0.22, 1] before:absolute before:content-[''] before:left-0 text-secondry  before:block before:w-full  before:bg-secondry before:transition before:duration-[0.6s] after:absolute after:content-[''] after:left-0  after:block after:w-full  after:bg-secondry after:transition after:duration-[0.6s] before:scale-x-0 before:origin-left after:origin-right after:delay-[0.25s] hover:before:scale-x-100 hover:before:delay-[0.25s] hover:after:scale-x-0 hover:after:delay-0 before:h-[2px] h-[2px] after:h-[2px] before:bottom-[-1.5px] after:bottom-[-1.5px] cursor-pointer">
+					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
 						hire great peo­ple.
 					</span>
 				</h2>
 			</div>
 			<div className="w-full border-y border-[#21212155] my-[50px] py-[20px]">
-				<div className="padding-x pb-[100px] w-full flex sm:flex-col xm:flex-col gap-[30px] justify-between">
+				<div className="padding-x pb-[50px] w-full flex sm:flex-col xm:flex-col gap-[30px] justify-between">
 					<div className="w-[50%] sm:w-full xm:w-full">
 						<h3 className="sub-paragraph font-medium text-secondry font-NeueMontreal">
 							What you can expect?
 						</h3>
 					</div>
 					<div className="w-[50%] sm:w-full xm:w-full">
-						<div className="w-full flex gap-[50px] h-full items-end sm:items-start sm:flex-col xm:items-start xm:flex-col">
+						<div className="w-full flex gap-[30px] h-full items-end sm:items-start sm:flex-col xm:items-start xm:flex-col">
 							<div className="w-[40%] sm:w-[60%] xm:w-[60%]">
 								<p className="sub-paragraph font-medium font-NeueMontreal text-secondry tracking-wide">
 									We create tailored presentations to help you persuade your

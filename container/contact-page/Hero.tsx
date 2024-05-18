@@ -6,7 +6,7 @@ export default function Hero() {
 	return (
 		<section className="w-full padding-x">
 			<div className="w-full flex flex-col">
-				<div className="w-full mt-[170px] mb-[130px]">
+				<div className="w-full margin">
 					<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 						<div className="flex items-center gap-[5px]">
 							<motion.span

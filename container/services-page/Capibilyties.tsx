@@ -11,13 +11,15 @@ export default function Capibilyties() {
 		<div className="w-full bg-about padding-y rounded-t-[20px]">
 			<div className="w-[82%] sm:w-full xm:w-full padding-x mb-[70px]">
 				<h1 className="sub-heading font-medium font-NeueMontreal text-secondry">
-					<span className="link-flash cursor-pointer">Let’s be honest.</span>
+					<span className="xl:link-flash lg:link-flash md:link-flash cursor-pointer">
+						Let’s be honest.
+					</span>
 					&nbsp;There are really no excuses to have a bad presentation anymore.
 					No one has time for poorly communicated ideas. Focus on what you do
 					best <span className="sm:hidden xm:hidden">—</span>
-					growing your business, while we do our best at &nbsp;
-					<span className="link-flash cursor-pointer">
-						making your presentations awesome.
+					growing your business, while we do our best at
+					<span className="xl:link-flash lg:link-flash md:link-flash cursor-pointer">
+						&nbsp;making your presentations awesome.
 					</span>
 				</h1>
 			</div>
