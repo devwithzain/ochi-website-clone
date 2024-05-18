@@ -18,7 +18,7 @@ export default function Tags({
 				className={`small-text font-NeueMontreal uppercase ${className}`}
 				href={item.href}>
 				<Rounded
-					className="py-[3px]"
+					className="py-[2px]"
 					backgroundColor={bgcolor}>
 					<p className="z-10 px-[15px]">{item.title}</p>
 				</Rounded>
