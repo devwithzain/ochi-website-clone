@@ -1,4 +1,4 @@
-import { aflorihtmic, blackBox, capaybilities1, capaybilities2, capaybilities3, capaybilities4, capaybilities5, client01, client02, client03, client04, client05, client06, client07, client08, client09, insights1, insights2, insights3, latest1, latest2, lexus, nestle, officevibe, orderlion, phase1, phase2, phase3, phase4, phase5, planetly, project1, project2, project3, project4, project5, project6, project7, project8, project9, publication1, publication2, publication3, toyota } from "@/public";
+import { capaybilities1, capaybilities2, capaybilities3, capaybilities4, client01, client02, client03, client04, client05, client06, client07, client08, client09, insights1, insights2, insights3, latest1, latest2, nestle, officevibe, phase1, phase2, phase3, phase4, phase5, planetly, project1, project2, project3, project4, project5, project6, project7, project8, project9, publication1, publication2, publication3 } from "@/public";
 
 // Navbar
 export const navbarItems = [
