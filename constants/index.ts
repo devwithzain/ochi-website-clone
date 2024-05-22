@@ -805,48 +805,59 @@ export const expectationsItems = [
    {
       id: 1,
       title1: "01",
-      title2: "04",
       subTitle1: "Comunication",
-      subTitle2: "One point of contact",
       btn: "read",
       para1: "The relationship with the clients is our top priority. We put extra effort into keeping mutual respect, honesty, and clarity in the conversation. For each client, we develop a project view site in Notion to track milestones and see the thinking behind steps. You always know what and when we do, as you feel confident in the results we bring.",
-      para2: "Every project is led by Ihor, the agency's founder and creative director. He ensures the whole project flows from start to finish. He puts together the right creative team for your specific project. You will always have this direct contact person available to speak your business language. He takes care of translating your business goals into the language of design for the team."
    },
    {
       id: 2,
-      title1: "02",
-      title2: "05",
-      subTitle1: "Ukrainian Business",
-      subTitle2: "Constantly Improving",
+      title1: "04",
+      subTitle1: "One point of contact",
       btn: "read",
-      para1: "We are a Ukrainian-born business working mainly with international clients. And as Ukrainians, we offer an unshakable workforce that's proven it can handle anything. The international arena was our focus from the start. And each working day, we showed up as genuine innovators and Ukraine ambassadors. Part of our mission is to promote our homeland by doing the most incredible work we can, each project at a time.",
-      para2: "We are passionate about creating industry-shifting presentations. And as the world around us, we constantly evolve and improve. Our growth is fueled by an innovative ecosystem designed for each team member to grow. We provide them with frequent pieces for training both on design craft and personal development. We are constantly looking for new ways to support our creatives and our community as for our clients."
+      para1: "Every project is led by Ihor, the agency's founder and creative director. He ensures the whole project flows from start to finish. He puts together the right creative team for your specific project. You will always have this direct contact person available to speak your business language. He takes care of translating your business goals into the language of design for the team."
    },
    {
       id: 3,
+      title1: "02",
+      subTitle1: "Ukrainian Business",
+      btn: "read",
+      para1: "We are a Ukrainian-born business working mainly with international clients. And as Ukrainians, we offer an unshakable workforce that's proven it can handle anything. The international arena was our focus from the start. And each working day, we showed up as genuine innovators and Ukraine ambassadors. Part of our mission is to promote our homeland by doing the most incredible work we can, each project at a time.",
+   },
+   {
+      id: 4,
+      title1: "05",
+      subTitle1: "Constantly Improving",
+      btn: "read",
+      para1: "We are passionate about creating industry-shifting presentations. And as the world around us, we constantly evolve and improve. Our growth is fueled by an innovative ecosystem designed for each team member to grow. We provide them with frequent pieces for training both on design craft and personal development. We are constantly looking for new ways to support our creatives and our community as for our clients."
+   },
+   {
+      id: 5,
       title1: "03",
-      title2: "06",
       subTitle1: "Holistic Approach",
-      subTitle2: "Limited Amount of Client",
       btn: "read",
       para1: "We simply ask lots of questions to understand your goals, business, and niche you operate. Our discovery process is essential as it informs our decisions throughout the project. Once we firmly define the goal, it is incredible to move towards that goal. That's why so much of our work is discovery, research, and asking good questions. The answers we get and the data we find go into the foundation of project success.",
-      para2: "We believe it is vital to dedicate sole focus and undivided attention to each project. To add as much value as possible, we serve a limited amount of clients per month. We have a rule that we follow to choosing projects: our client understands the value of the presentation as a communication tool. We believe in their products or ideas. Together, we work to create positive change."
    },
-
+   {
+      id: 6,
+      title1: "06",
+      subTitle1: "Limited Amount of Client",
+      btn: "read",
+      para1: "We believe it is vital to dedicate sole focus and undivided attention to each project. To add as much value as possible, we serve a limited amount of clients per month. We have a rule that we follow to choosing projects: our client understands the value of the presentation as a communication tool. We believe in their products or ideas. Together, we work to create positive change."
+   },
 ];
 
 export const achiveItems = [
    {
       id: 1,
-      title1: "100+",
-      title2: "$280+",
+      title1: ["100+"],
+      title2: ["$280+"],
       subTitle1: "Clients from 17 Countries",
       subTitle2: "Millions raised for our clients",
    },
    {
       id: 2,
-      title1: "90%",
-      title2: "98%",
+      title1: ["90%"],
+      title2: ["98%"],
       subTitle1: "Of our clients come back",
       subTitle2: "Net Promoting Score",
    },
