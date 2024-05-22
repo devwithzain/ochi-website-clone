@@ -26,13 +26,13 @@ export default function MobileNav() {
 					className="text-3xl cursor-pointer text-black"
 				/>
 			</div>
-			{toggle && (
-				<AnimatePresence mode="wait">
+			<AnimatePresence mode="wait">
+				{toggle && (
 					<motion.div
 						initial={{ y: "-100%" }}
 						animate={{ y: 0 }}
 						exit={{ y: "-100%" }}
-						transition={{ duration: 0.85, ease: [0.3, 0.86, 0.36, 0.95] }}
+						transition={{ duration: 1, ease: [0.3, 0.86, 0.36, 0.95] }}
 						className="fixed top-0 bottom-0 right-0 z-50 w-full min-h-screen flex justify-end items-end flex-col bg-secondry">
 						<div className="w-full flex justify-between items-center h-[8vh] border-b border-[#f1f1f155] padding-x">
 							<Link href={"/"}>
@@ -60,8 +60,8 @@ export default function MobileNav() {
 							))}
 						</ul>
 					</motion.div>
-				</AnimatePresence>
-			)}
+				)}
+			</AnimatePresence>
 		</>
 	);
 }
