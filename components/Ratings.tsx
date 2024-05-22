@@ -5,7 +5,7 @@ import { brand01, brand02, brand03 } from "@/public";
 
 export default function Ratings() {
 	return (
-		<div className="w-full flex justify-between sm:flex-col xm:flex-col gap-[20px] sticky to-50%">
+		<div className="w-full flex justify-between sm:flex-col xm:flex-col gap-[20px]">
 			<div className="w-[49.5%] sm:w-full xm:w-full justify-between h-[60vh] sm:h-[50vh] xm:h-[50vh] gap-[10px]">
 				<div className="w-full h-full flex items-center justify-center rounded-[10px] bg-marquee relative">
 					<Image
