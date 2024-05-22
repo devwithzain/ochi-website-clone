@@ -4,7 +4,7 @@ import { latestItemss } from "@/constants";
 
 export default function Insights() {
 	return (
-		<section className="w-full pb-[150px] sticky top-0 bg-background sm:static xm:static">
+		<section className="w-full pb-[100px] lg:pb-[80px] md:pb-[60px] sm:pb-[40px] xm:pb-[40px] bg-background">
 			<div className="w-full flex flex-col justify-between">
 				<div className="w-full flex flex-col">
 					<div className="padding-x pb-[30px]">
@@ -41,7 +41,7 @@ export default function Insights() {
 													<div
 														className="transform translate-y-[-200%] group-hover:translate-y-0 transition-all duration-300 ease-in-out"
 														key={link.id}>
-														<div className="rounded-[50px] border border-about py-[5px] px-[15px] cursor-pointer">
+														<div className="rounded-[50px] border border-about  py-[2px] px-[15px] cursor-pointer">
 															<Link
 																className="text-[18px] leading-[22px] font-NeueMontreal text-about uppercase"
 																href={"/"}>
